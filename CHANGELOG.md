@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/gojoeapp/react-native-wheel-datepicker/compare/v1.1.1...v1.2.0) (2020-05-21)
+
+
+### Features
+
+* upgrade WheelPicker, add standard version ([b32f7ad](https://github.com/gojoeapp/react-native-wheel-datepicker/commit/b32f7adf4ef05d9f1cc587370e2e5f27cd1acb78))
 
 ### [1.0.1](https://github.com/davidgovea/react-native-wheel-datepicker/compare/v1.0.0...v1.0.1) (2019-12-29)
 
