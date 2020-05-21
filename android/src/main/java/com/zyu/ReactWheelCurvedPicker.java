@@ -8,8 +8,7 @@ import android.graphics.Shader;
 import android.os.SystemClock;
 import android.util.AttributeSet;
 
-import com.aigestudio.wheelpicker.core.AbstractWheelPicker;
-import com.aigestudio.wheelpicker.view.WheelCurvedPicker;
+import com.aigestudio.wheelpicker.WheelPicker;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.WritableMap;
@@ -21,10 +20,7 @@ import com.facebook.react.uimanager.events.RCTEventEmitter;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author <a href="mailto:lesliesam@hotmail.com"> Sam Yu </a>
- */
-public class ReactWheelCurvedPicker extends WheelCurvedPicker {
+public class ReactWheelCurvedPicker extends WheelPicker {
 
     private final EventDispatcher mEventDispatcher;
     private List<Object> mValueData;
@@ -52,8 +48,8 @@ public class ReactWheelCurvedPicker extends WheelCurvedPicker {
     }
 
     @Override
-    protected void drawForeground(Canvas canvas) {
-        super.drawForeground(canvas);
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
 
         Paint paint = new Paint();
         paint.setColor(Color.WHITE);
@@ -66,8 +62,8 @@ public class ReactWheelCurvedPicker extends WheelCurvedPicker {
     }
 
     @Override
-    public void setItemIndex(int index) {
-        super.setItemIndex(index);
+    public void setSelectedItemPosition(int index) {
+        super.setSelectedItemPosition(index);
         unitDeltaTotal = 0;
 		mHandler.post(this);
     }
