@@ -1,4 +1,4 @@
-# @davidgovea/react-native-wheel-datepicker
+# @gojoeapp/react-native-wheel-datepicker
 
 [![NPM](https://img.shields.io/npm/v/@davidgovea/react-native-wheel-datepicker.svg)](https://www.npmjs.com/package/@davidgovea/react-native-wheel-datepicker)
 [![Build Status](https://img.shields.io/circleci/project/github/davidgovea/react-native-wheel-datepicker.svg)](https://circleci.com/gh/davidgovea/react-native-wheel-datepicker)
@@ -9,15 +9,14 @@ A iOS style picker and datepicker components for ReactNative.
 - Original repository by @lesliesam: [react-native-wheel-picker](https://github.com/lesliesam/react-native-wheel-picker).
 - Fork by @wusuopu who added the real cross platform behavior and datepicker [react-native-wheel-picker](https://github.com/wusuopu/react-native-wheel-picker).
 - Fork by @pinguinjkeke, who provided maintenance and fixes [react-native-wheel-datepicker](https://github.com/pinguinjkeke/react-native-wheel-datepicker)
-
-This is the fourth fork of repository, since it seems that @pinguinjkeke is no longer supporting [react-native-wheel-datepicker](https://github.com/pinguinjkeke/react-native-wheel-datepicker).
+- Fork by @davidgovea, who provided maintenance and fixes [react-native-wheel-datepicker](https://github.com/davidgovea/react-native-wheel-datepicker)
 
 ### Goals of this fork:
-* Maintenance / updates for RN & platform changes
-* Implement some missing features on Android (12-hour AM/PM mode, minute intervals)
-* Typescript definitions
-* Add tests
-* Semver adherance
+* update android WheelPicker to version 1.1.3
+* implement missing functions of WheelPicker
+* replace PickerIOS with @react-native-community/picker   
+* replace DatePickerIOS with @react-native-community/datetimepicker   
+
 
 ## Introduction
 Cross platform Picker component for React-native.

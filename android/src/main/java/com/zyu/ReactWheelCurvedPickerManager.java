@@ -67,23 +67,23 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
     @ReactProp(name="selectedIndex")
     public void setSelectedIndex(ReactWheelCurvedPicker picker, int index) {
         if (picker != null && picker.getState() == AbstractWheelPicker.SCROLL_STATE_IDLE) {
-            picker.setItemIndex(index);
+            picker.setSelectedItemPosition(index);
             picker.invalidate();
         }
     }
 
-    @ReactProp(name="textColor", customType = "Color")
-    public void setTextColor(ReactWheelCurvedPicker picker, Integer color) {
+    @ReactProp(name="itemTextColor", customType = "Color")
+    public void setItemTextColor(ReactWheelCurvedPicker picker, Integer color) {
         if (picker != null) {
-            picker.setCurrentTextColor(color);
-            picker.setTextColor(color);
+            picker.setSelectedItemTextColor(color);
+            picker.setItemTextColor(color);
         }
     }
 
-    @ReactProp(name="textSize")
-    public void setTextSize(ReactWheelCurvedPicker picker, int size) {
+    @ReactProp(name="itemTextSize")
+    public void setItemTextSize(ReactWheelCurvedPicker picker, int size) {
         if (picker != null) {
-            picker.setTextSize((int) PixelUtil.toPixelFromDIP(size));
+            picker.setItemTextSize((int) PixelUtil.toPixelFromDIP(size));
         }
     }
 
@@ -91,6 +91,69 @@ public class ReactWheelCurvedPickerManager extends SimpleViewManager<ReactWheelC
     public void setItemSpace(ReactWheelCurvedPicker picker, int space) {
         if (picker != null) {
             picker.setItemSpace((int) PixelUtil.toPixelFromDIP(space));
+        }
+    }
+
+    @ReactProp(name="cyclic")
+    public void setCyclic(ReactWheelCurvedPicker picker, boolean isCyclic) {
+        if (picker != null) {
+            picker.setCyclic(isCyclic);
+        }
+    }
+
+    @ReactProp(name="curtain")
+    public void setCurtain(ReactWheelCurvedPicker picker, boolean haveCurtain) {
+        if (picker != null) {
+            picker.setCurtain(haveCurtain);
+        }
+    }
+
+    @ReactProp(name="atmospheric")
+    public void setAtmospheric(ReactWheelCurvedPicker picker, boolean haveAtmospheric) {
+        if (picker != null) {
+            picker.setAtmospheric(haveAtmospheric);
+        }
+    }
+
+    @ReactProp(name="curved")
+    public void setCurved(ReactWheelCurvedPicker picker, boolean isCurved) {
+        if (picker != null) {
+            picker.setCurved(isCurved);
+        }
+    }
+
+    @ReactProp(name="selectedItemTextColor", customType = "Color")
+    public void setSelectedItemTextColor(ReactWheelCurvedPicker picker, Integer color) {
+        if (picker != null) {
+            picker.setSelectedItemTextColor(color);
+        }
+    }
+
+    @ReactProp(name="itemTextColor", customType = "Color")
+    public void setItemTextColor(ReactWheelCurvedPicker picker, Integer color) {
+        if (picker != null) {
+            picker.setItemTextColor(color);
+        }
+    }
+
+    @ReactProp(name="indicator")
+    public void setIndicator(ReactWheelCurvedPicker picker, int space) {
+        if (picker != null) {
+            picker.setIndicator();
+        }
+    }
+
+    @ReactProp(name="indicatorColor", customType = "Color")
+    public void setIndicatorColor(ReactWheelCurvedPicker picker, Integer color) {
+        if (picker != null) {
+            picker.setIndicatorColor(color);
+        }
+    }
+
+    @ReactProp(name="indicatorSize")
+    public void setIndicatorSize(ReactWheelCurvedPicker picker, int size) {
+        if (picker != null) {
+            picker.setIndicatorSize((int) PixelUtil.toPixelFromDIP(size));
         }
     }
 
