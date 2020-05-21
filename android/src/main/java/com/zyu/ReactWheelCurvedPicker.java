@@ -43,7 +43,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
 
             @Override
             public void onWheelScrollStateChanged(int state) {
-                pickerState = state
+                pickerState = state;
             }
         });
     }
