@@ -1,6 +1,6 @@
 {
   "name": "@gojoeapp/react-native-wheel-datepicker",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "React native cross platform iOS-style picker and datepicker.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
