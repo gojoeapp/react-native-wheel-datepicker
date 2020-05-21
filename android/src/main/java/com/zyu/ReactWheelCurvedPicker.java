@@ -34,7 +34,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
             }
 
             @Override
-            public void onWheelSelected(int index, String data) {
+            public void onWheelSelected(int index) {
                 if (mValueData != null && index < mValueData.size()) {
                     mEventDispatcher.dispatchEvent(
                             new ItemSelectedEvent(getId(), mValueData.get(index)));
