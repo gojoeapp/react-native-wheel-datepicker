@@ -28,7 +28,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
     public ReactWheelCurvedPicker(ReactContext reactContext) {
         super(reactContext);
         mEventDispatcher = reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher();
-        setOnWheelChangeListener(new OnWheelChangeListener() {
+        setOnWheelChangeListener(new WheelPicker.OnWheelChangeListener() {
             @Override
             public void onWheelScrolled(float deltaX, float deltaY) {
             }
