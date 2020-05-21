@@ -1,6 +1,6 @@
 {
-  "name": "@davidgovea/react-native-wheel-datepicker",
-  "version": "1.0.1",
+  "name": "@gojoeapp/react-native-wheel-datepicker",
+  "version": "1.0.2",
   "description": "React native cross platform iOS-style picker and datepicker.",
   "main": "src/index.js",
   "types": "src/index.d.ts",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidgovea/react-native-wheel-datepicker.git"
+    "url": "git+https://github.com/gojoeapp/react-native-wheel-datepicker.git"
   },
   "keywords": [
     "react-native",
@@ -18,12 +18,12 @@
     "picker",
     "wheel"
   ],
-  "author": "David Govea <govea.d@gmail.com>",
+  "author": "Mihai Bucse <mihai@gojoe.com>",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/davidgovea/react-native-wheel-datepicker/issues"
+    "url": "https://github.com/gojoeapp/react-native-wheel-datepicker/issues"
   },
-  "homepage": "https://github.com/davidgovea/react-native-wheel-datepicker#readme",
+  "homepage": "https://github.com/gojoeapp/react-native-wheel-datepicker#readme",
   "dependencies": {
     "moment": "^2.19.1"
   },
@@ -44,7 +44,8 @@
     "react": "~16.9.0",
     "react-dom": "^16.12.0",
     "react-native": "^0.61.5",
-    "react-test-renderer": "~16.9.0"
+    "react-test-renderer": "~16.9.0",
+    "standard-version": "*"
   },
   "peerDependencies": {
     "prop-types": "*",
