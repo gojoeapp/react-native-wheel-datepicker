@@ -61,12 +61,12 @@ public class ReactWheelCurvedPicker extends WheelPicker {
 //         canvas.drawLine(rectCurItem.left, rectCurItem.bottom, rectCurItem.right, rectCurItem.bottom, paint);
 //     }
 
-    @Override
-    public void setSelectedItemPosition(int index) {
-        super.setSelectedItemPosition(index);
-        unitDeltaTotal = 0;
-		mHandler.post(this);
-    }
+//     @Override
+//     public void setSelectedItemPosition(int index) {
+//         super.setSelectedItemPosition(index);
+//         unitDeltaTotal = 0;
+// 		mHandler.post(this);
+//     }
 
     public void setValueData(List<Object> data) {
         mValueData = data;
