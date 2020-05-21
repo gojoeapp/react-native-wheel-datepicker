@@ -24,7 +24,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
 
     private final EventDispatcher mEventDispatcher;
     private List<Object> mValueData;
-
+    public int pickerState;
     public ReactWheelCurvedPicker(ReactContext reactContext) {
         super(reactContext);
         mEventDispatcher = reactContext.getNativeModule(UIManagerModule.class).getEventDispatcher();
@@ -43,6 +43,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
 
             @Override
             public void onWheelScrollStateChanged(int state) {
+                pickerState = state
             }
         });
     }
@@ -73,7 +74,7 @@ public class ReactWheelCurvedPicker extends WheelPicker {
     }
 
     public int getState() {
-        return state;
+        return pickerState;
     }
 }
 
